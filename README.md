@@ -3,6 +3,10 @@
  
  
 TBA:
-- skills section
-- contact form
-- footer
+- More projects to portfolio
+- Working contact form
+- Footer
+
+Known Issues:
+- Navbar .active script
+- Contact form font
