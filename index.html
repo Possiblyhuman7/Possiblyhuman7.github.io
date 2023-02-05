@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Possibly a Website</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="portfolio, web developer, front-end developer, Jenny Piik">
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<!-- Icon Library -->
+	<script src="https://kit.fontawesome.com/e1679097df.js" crossorigin="anonymous"></script>
+	<script src="script.js"></script>
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;1,300&family=IBM+Plex+Mono:wght@300;400&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+	<!-- Navigation -->
+	<nav class="navbar">
+		<div class="title">
+			<h3>Possibly a Website</h3>
+		</div>
+		<ul class="navleft" id="myNavleft">
+			<li><a class="btn" href="#home" onclick="active()">Home</a></li>
+			<li><a class="btn" href="#about" onclick="active()">About Me</a></li>
+			<li><a class="btn" href="#portfolio" onclick="active()">Portfolio</a></li>
+			<li><a class="btn" href="#contact" onclick="active()">Contact</a></li>
+			<a href="javascript:void(0);" class="icon" onclick="hamburger()">
+				<i class="fa-solid fa-bars"></i></a>
+		</ul>
+	</nav>
+
+	<div class="content">
+		<!-- Header -->
+		<section class="header" id="home">
+			<div><!-- spacer, don't delete--></div>
+			<div class="headertext">
+				<div class="hbox">
+					<h1>Welcome, stranger</h1>
+				</div>
+				<div class="hbox">
+					<p>This is one junior dev's website to
+						showcase my work and experiment with web design. Under
+						construction, so watch your step!
+					</p>
+					<button class="button"><a href="#portfolio">My Portfolio</a></button>
+				</div>
+			</div>
+			<div><img class="svg" src="./images/layered-peaks-haikei.svg" /></div>
+		</section>
+
+
+
+		<!-- About Me -->
+		<section class="aboutme" id="about">
+			<div class="container">
+				<div class="box left">
+					<img src="./images/profile-pic2.jpg" />
+				</div>
+				<div class="box right">
+					<h2>Hi! I'm Jenny,</h2>
+					<h3>a junior developer and a lifetime nerd.</h3>
+					<p>I've been coding my whole life without realizing it,
+						starting from Geocities, learning what I needed at the time.
+						Not long ago I decided to turn my passion into a career and
+						finally feel like I have found my home planet.</p>
+					<p>Right now I am focusing on front-end development, data analysis/visualization
+						and UX/UI design, but there are few areas of IT that don't interest me.
+						My list of future topics are, including but not limited to:
+						machine learning, AI, cyber security...</p>
+					<p>Bilingual in Fin/Eng. Located in Tampere, Finland, but open to remote opportunities
+						wherever!</p>
+					<p>Other areas of expertise/interest: linguistics, fitness, beauty/hair,
+						science fiction, writing, illustration, games, DIY</p>
+					<p><span>Live long and prosper! <i class="fa-solid fa-hand-spock"></i></span></p>
+				</div>
+			</div>
+
+		</section>
+
+		<!-- Portfolio -->
+		<section class="portfolio" id="portfolio">
+			<h2>Portfolio</h2><br>
+			<div class="gallery">
+				<div class="box">
+					<h4>Feedback Survey</h4>
+					<p>ICT Bootcamp voluntary project.
+						A feedback survey for campers as requested by Bear IT, collab.
+						My roles were front end & UX/UI.
+					</p>
+					<p class="tags">React HTML CSS AWS</p>
+					<button>Github</button>
+				</div>
+				<div class="box">
+					<h4>Ravenous</h4>
+					<p class="tags">React</p>
+				</div>
+
+				<div class="box">
+					<h4>Feedback Survey</h4>
+					<p class="tags">React HTML CSS AWS</p>
+				</div>
+				<div class="box">
+					<h4>Feedback Survey</h4>
+					<p class="tags">React HTML CSS AWS</p>
+				</div>
+				<div class="box">
+					<h4>This Website!</h4>
+					<p>which you're on that I coded with my own two hands.</p>
+					<p class="tags">HTML CSS JavaScript</p>
+					<button>Github</button>
+				</div>
+
+			</div>
+		</section>
+
+		<!-- Contact -->
+		<section class="contact" id="contact">
+
+			<h2>Contact Me</h2><br>
+			<p>
+				<a href="https://linkedin.com/in/jenny-piik" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>&nbsp  &nbsp
+				<a href="https://github.com/Possiblyhuman7" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+			</p>
+			<p>Or leave a message below</p>
+			<div class="form">
+				<form action="action_page.php">
+
+					<label for="name">Name</label><br>
+					<input class="cform" type="text" id="name" name="name" placeholder="Your name..">
+					<br>
+					<label for="email">E-mail</label><br>
+					<input class="cform" type="text" id="email" name="email" placeholder="Your e-mail.." required>
+					<br>
+					<label for="subject">Subject</label><br>
+					<textarea class="cform" id="subject" name="subject" placeholder="Write your message here.."
+						required></textarea>
+					<br>
+					<input class="button" type="submit" value="Submit">
+
+				</form>
+			</div>
+		</section>
+		<!-- Footer -->
+	</div>
+</body>
+
+</html>
