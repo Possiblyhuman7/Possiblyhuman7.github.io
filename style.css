@@ -216,12 +216,12 @@ button a, .button a{
      transition: all 1s ease-in;
     }
      .headertext h1{
-         font-size: 12vw;
+         font-size: 12px;
          transition: all 1s ease;
      }
  
      button, .button{
-         font-size: 3vw;
+         font-size: 5vw;
          transition: all 0.7s ease;
      }
  }
@@ -364,6 +364,12 @@ textarea {
 label, input, textarea {
     margin: 8px;
     
+}
+
+@media screen and (max-width:600px) {
+    input[type=text] {
+        max-width: 90%;
+    }
 }
 
 /** Footer **/
