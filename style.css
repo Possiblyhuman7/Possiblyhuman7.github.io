@@ -358,7 +358,7 @@ button a, .button a{
 }
 
 input[type=text], textarea {
-    font-family: font-family: "IBM Plex Mono", Courier, monospace !important;
+    font-family: "IBM Plex Mono", Courier, monospace !important;
     border-radius: 0;
 }
 
@@ -395,7 +395,7 @@ footer {
 
 
 
-/* XML */
+/* 
 <palette>
   <color name="Beige" hex="EAE9D2" r="234" g="233" b="210" />
   <color name="Charcoal" hex="1B4050" r="27" g="64" b="80" />
