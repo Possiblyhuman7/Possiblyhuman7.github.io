@@ -8,7 +8,7 @@ body {
     justify-content: center;
     background-color: black;
     font-family: "Open Sans", Helvetica, sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     color: rgba(255, 245, 238, 1);
 }
 .content {
@@ -22,14 +22,14 @@ h1 {
     font-weight: 400;
     font-variant: small-caps;
     margin: 0;
-    line-height: 100%;
 }
 
 h2 {
     font-family: "Cormorant", serif;
     font-size: 3rem;
     margin: 0px;
-    font-weight: 400;
+    font-weight: 500;
+    font-variant: small-caps;
 }
 h3 {
     font-family:"Cormorant", serif;
@@ -50,6 +50,14 @@ span {
     font-style: italic;
     color: lightseagreen;
     font-size: 1.2rem;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    width: 60%;
+    display: block;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255), rgba(255, 255, 255, 0));
 }
 
 /* Navigation */
@@ -229,6 +237,7 @@ button a, .button a{
 /* About Me*/
 .aboutme{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: rgb(150, 220, 212);
@@ -261,6 +270,10 @@ button a, .button a{
    width: 100%;
    border-radius: 50%;
    box-shadow: 12px 12px 0px 2px rgba(17, 52, 127, 0.5);
+}
+
+.aboutme h2{
+    font-variant: normal;
 }
 
 /* Portfolio */
