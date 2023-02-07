@@ -5,8 +5,8 @@
 TBA:
 - More projects to portfolio
 - Working contact form
-- Footer
 
 Known Issues:
 - Navbar .active script
 - Contact form font
+- Responsive screen size issues
