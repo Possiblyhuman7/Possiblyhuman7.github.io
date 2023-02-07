@@ -95,8 +95,7 @@ hr {
 
 /* Add a color to the active/current link */
 .navbar a.active {
-    background-color: #04AA6D;
-    color: white;
+    color:darkcyan;
 }
 
 .navleft {
@@ -290,13 +289,11 @@ button a, .button a{
 .portfolio .gallery{
     display: flex;
     flex-flow: row wrap;
-    background-color: aqua;
-    
     justify-content: space-evenly;
 }
 
 .portfolio .box{
-    background-color: #04AA6D;
+    background-color: darkcyan;
     height: 200px;
     width: 200px;
     display: flex;
@@ -304,6 +301,7 @@ button a, .button a{
     position: relative;
     margin: 10px;
     padding: 5px;
+    border: 2px solid black;
 }
 
 .portfolio .tags{
