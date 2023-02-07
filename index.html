@@ -9,8 +9,8 @@
 	<!-- Icon Library -->
 	<script src="https://kit.fontawesome.com/e1679097df.js" crossorigin="anonymous"></script>
 	<script src="script.js"></script>
-	<!-- a helper script for vaidating the form, NOT MINE, CREDIT IN FILE-->
-<script language="JavaScript" src=".scripts/gen_validatorv31.js" type="text/javascript"></script>
+	<!-- a helper script for vaidating the form, NOT MINE, CREDIT IN FILE
+	<script language="JavaScript" src=".scripts/gen_validatorv31.js" type="text/javascript"></script> -->
 	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -98,7 +98,8 @@
 						My roles were front end & UX/UI.
 					</p>
 					<p class="tags">React HTML CSS AWS</p>
-					<a href="https://github.com/ylitormatech/learnit-ictcamp22-app" target="_blank" rel="noopener noreferrer">
+					<a href="https://github.com/ylitormatech/learnit-ictcamp22-app" target="_blank"
+						rel="noopener noreferrer">
 						<button>Github</button>
 					</a>
 				</div>
@@ -118,7 +119,8 @@
 					<p>Codecademy portfolio project. Analyzing medical insurance data using Python and pandas.
 					</p>
 					<p class="tags">Python</p>
-					<a href="https://github.com/Possiblyhuman7/Medical-insurance-data-analysis" target="_blank" rel="noopener noreferrer">
+					<a href="https://github.com/Possiblyhuman7/Medical-insurance-data-analysis" target="_blank"
+						rel="noopener noreferrer">
 						<button>Github</button>
 					</a>
 				</div>
@@ -126,7 +128,8 @@
 					<h4>This Website!</h4>
 					<p>which you're on that I coded with my own two hands.</p>
 					<p class="tags">HTML CSS JavaScript</p>
-					<a href="https://github.com/Possiblyhuman7/Possiblyhuman7.github.io" target="_blank" rel="noopener noreferrer">
+					<a href="https://github.com/Possiblyhuman7/Possiblyhuman7.github.io" target="_blank"
+						rel="noopener noreferrer">
 						<button>Github</button>
 					</a>
 				</div>
@@ -145,12 +148,29 @@
 			<h2>Contact Me</h2>
 			<hr /><br>
 			<p>
-				<a href="https://linkedin.com/in/jenny-piik" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>&nbsp  &nbsp
-				<a href="https://github.com/Possiblyhuman7" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+				<a href="https://linkedin.com/in/jenny-piik" target="_blank" rel="noopener noreferrer"><i
+						class="fa-brands fa-linkedin"></i></a>&nbsp &nbsp
+				<a href="https://github.com/Possiblyhuman7" target="_blank" rel="noopener noreferrer"><i
+						class="fa-brands fa-github"></i></a>
 			</p>
 			<p>Or leave a message below</p>
 			<div class="form">
-				<form method="post" action="contactform.php">
+				<form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
+					<fieldset id="fs-frm-inputs">
+					  <label for="name">Name</label><br>
+					  <input type="text" name="name" id="name" placeholder="Your name" required=""><br>
+					  <label for="email">Email Address</label><br>
+					  <input type="email" name="_replyto" id="email" placeholder="Your e-mail" required=""><br>
+					  <label for="message">Message</label><br>
+					  <textarea rows="5" name="message" id="message" placeholder="Leave your message here" required=""></textarea>
+					  <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+					</fieldset>
+					<input class="button" type="submit" value="Submit">
+				  </form>
+
+
+
+				<!-- <form method="post" action="contactform.php">
 
 					<label for="name">Name</label><br>
 					<input class="cform" type="text" id="name" name="name" placeholder="Your name.." required>
@@ -164,7 +184,7 @@
 					<br>
 					<input class="button" type="submit" value="Submit">
 
-				</form>
+				</form> -->
 			</div>
 		</section>
 		<!-- Footer -->
@@ -179,9 +199,10 @@
 	// Code for validating the form
 	// Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
 	// for details
-	var frmvalidator  = new Validator("contactform");
-	frmvalidator.addValidation("name","req","Please provide your name"); 
-	frmvalidator.addValidation("email","req","Please provide your email"); 
-	frmvalidator.addValidation("email","email","Please enter a valid email address"); 
-	</script>
+	var frmvalidator = new Validator("contactform");
+	frmvalidator.addValidation("name", "req", "Please provide your name");
+	frmvalidator.addValidation("email", "req", "Please provide your email");
+	frmvalidator.addValidation("email", "email", "Please enter a valid email address"); 
+</script>
+
 </html>
