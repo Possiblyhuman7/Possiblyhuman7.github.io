@@ -237,7 +237,7 @@ button a, .button a{
 /* About Me*/
 .aboutme{
     display: flex;
-    flex-direction: column;
+    flex-direction: column !important;
     justify-content: center;
     align-items: center;
     background-color: rgb(150, 220, 212);
