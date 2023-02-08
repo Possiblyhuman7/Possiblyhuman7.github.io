@@ -357,12 +357,12 @@ button a, .button a{
     width: 50vw;
 }
 
-input[type=text], textarea {
+input, textarea {
     font-family: "IBM Plex Mono", Courier, monospace !important;
     border-radius: 0;
 }
 
-input[type=text]:focus, textarea:focus {
+input:focus, textarea:focus {
     border: 2px solid white;
     border-radius: 0;
 }
