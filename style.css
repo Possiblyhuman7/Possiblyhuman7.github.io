@@ -218,12 +218,12 @@ button a, .button a{
      transition: all 1s ease-in;
     }
      .headertext h1{
-         font-size: 12px;
+         font-size: 4rem;
          transition: all 1s ease;
      }
  
      button, .button{
-         font-size: 5vw;
+         font-size: 14px;
          transition: all 0.7s ease;
      }
  }
@@ -291,6 +291,7 @@ button a, .button a{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 30px;
 }
 
@@ -298,6 +299,12 @@ button a, .button a{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+}
+
+@media screen and (min-width:700px) {
+    .portfolio .gallery {
+        width: 80%;
+    }
 }
 
 .portfolio .box{
@@ -366,7 +373,11 @@ button a, .button a{
     justify-content: center;
     align-items: center;
     padding: 30px;
-    background-color: cadetblue;
+    background-image: url("./images/contact-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
 }
 
 .contact i{
