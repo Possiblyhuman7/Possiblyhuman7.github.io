@@ -275,6 +275,12 @@ button a, .button a{
     font-variant: normal;
 }
 
+@media screen and (max-width:800px) {
+    .aboutme .right {
+        width: 90%;
+    }
+}
+
 /* Portfolio */
 
 .portfolio {
